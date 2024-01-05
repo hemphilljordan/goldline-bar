@@ -281,6 +281,10 @@ footer img {
 
 @media screen and (max-width: 768px) {
 
+  .main-image {
+    margin-top: 50px;
+  }
+
   .menu p,
   .no-mobile {
     display: none;
