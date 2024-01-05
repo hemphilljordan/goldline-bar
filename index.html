@@ -18,19 +18,18 @@
     <div class="menu">
       <p onclick="scrollToSection('#about')">About</p>
       <p onclick="scrollToSection('#music')">Music</p>
-      <p>Gallery</p>
       <p onclick="scrollToSection('#contact')">Contact</p>
-      <img src="images/instagram.svg" alt="">
-      <img src="images/facebook.svg" alt="">
+      <a href="https://www.instagram.com/goldlinebar/?hl=en"><img src="images/instagram.svg" alt=""></a>
+      <a href="https://www.facebook.com/goldlinebar/"><img src="images/facebook.svg" alt=""></a>
     </div>
     <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
       <div class="bar1"></div>
       <div class="bar2"></div>
       <div class="bar3"></div>
       <ul class="mobile-menu">
-        <li><a href="index.html">About</a></li>
-        <li><a href="index.html">Music</a></li>
-        <li><a href="index.html">Contact</a></li>
+        <li><a href="#about-mobile">About</a></li>
+        <li><a href="#music">Music</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </header>
@@ -44,9 +43,7 @@
     <div class="left">
       <h1>A neighborhood bar created for locals and visitors alike.</h1>
       <p>Enjoy casual drinks in a relaxed environment.</p>
-      <p>As lights dim and cocktails are poured, a warm, social dining experience begins with plates drawn from diverse
-        cultures and local twists. In the later hours, programming infuses energy to ensure the mood is right for a
-        convivial night fueled by cocktails, music and late-night bites.</p>
+      <p>As lights dim and cocktails are poured, an exciting, eclectic mix of vinyls is curated by LA's finest DJs.  Socialize, dance, or lounge while being surrounded by floor to ceiling records and grooves that set the mood for a convivial night fueled by cocktails and music.</p>
     </div>
     <div class="logo-right hide-up">
       <img src="images/bwpic.jpg" alt="">
@@ -59,7 +56,7 @@
       <img src="images/drink.jpg" alt="">
     </div>
     <div class="music-right">
-      <div class="hide-up">
+      <div class="hide-up" id="about-mobile">
         <img src="images/gold2.jpg" alt="">
       </div>
       <h1>DJs Every Single Night</h1>
