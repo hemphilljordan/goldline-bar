@@ -3,7 +3,7 @@
 let lastScrollTop = 0;
 const header = document.getElementById("site-header");
 
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function () {
   let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
   if (currentScroll > lastScrollTop) {
@@ -24,7 +24,7 @@ window.addEventListener("scroll", function() {
 
 const image = document.getElementById("zoom-image");
 
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function () {
   // Calculate the scroll position
   const scrollTop = window.scrollY || window.pageYOffset;
 
@@ -45,7 +45,7 @@ window.addEventListener("scroll", function() {
 const observerUp = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     console.log(entry)
-    if (entry.isIntersecting){
+    if (entry.isIntersecting) {
       entry.target.classList.add('show-up')
     } else {
       entry.target.classList.remove('show-up')
@@ -92,12 +92,16 @@ function scrollToSection(selector) {
 
 
 
+let menuOpen = false
 
-// I think when pictures appear from low to high they make the page have blank space on the right
-
-
-
-
-function toggleMobileMenu(menu){
+function toggleMobileMenu(menu) {
   menu.classList.toggle('open');
+
+  if (menuOpen) {
+    document.querySelector('body').style.position = 'relative'
+    menuOpen = false
+  } else {
+    document.querySelector('body').style.position = 'fixed'
+    menuOpen = true
+  }
 }
