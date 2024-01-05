@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Gold Line Bar</title>
+</head>
+
+<body>
+
+  <header id="site-header">
+    <img src="images/logo.webp" alt="" class="logo">
+    <div class="menu">
+      <p onclick="scrollToSection('#about')">About</p>
+      <p onclick="scrollToSection('#music')">Music</p>
+      <p>Gallery</p>
+      <p onclick="scrollToSection('#contact')">Contact</p>
+      <img src="images/instagram.svg" alt="">
+      <img src="images/facebook.svg" alt="">
+    </div>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <ul class="mobile-menu">
+        <li><a href="index.html">About</a></li>
+        <li><a href="index.html">Music</a></li>
+        <li><a href="index.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <img src="images/discoball.jpg" alt="" class="main-image">
+  <div class="image-container">
+    <img src="images/gold4.jpg" alt="" id="zoom-image">
+  </div>
+
+  <div class="description">
+    <div class="left">
+      <h1>A neighborhood bar created for locals and visitors alike.</h1>
+      <p>Enjoy casual drinks in a relaxed environment.</p>
+      <p>As lights dim and cocktails are poured, a warm, social dining experience begins with plates drawn from diverse
+        cultures and local twists. In the later hours, programming infuses energy to ensure the mood is right for a
+        convivial night fueled by cocktails, music and late-night bites.</p>
+    </div>
+    <div class="logo-right hide-up">
+      <img src="images/bwpic.jpg" alt="">
+    </div>
+  </div>
+
+  <div class="gray-div" id="about">
+  <div class="music">
+    <div class="music-left hide-up">
+      <img src="images/drink.jpg" alt="">
+    </div>
+    <div class="music-right">
+      <div class="hide-up">
+        <img src="images/gold2.jpg" alt="">
+      </div>
+      <h1>DJs Every Single Night</h1>
+      <p>Wall to wall records and grooves! </p>
+      <p>Gold Line Bar is located in Los Angeles, CA. There are 10,000+ records from Peanut Butter Wolf's personal collection in the bar's library.  DJs play nightly and select records exclusively from the collection.</p>
+    </div>
+  </div>
+  <div class="more-pics">
+    <img src="images/gold6.jpg" alt="" class="hide-stagger">
+    <img src="images/gold5.jpg" alt="" class="hide-stagger">
+    <img src="images/gold3.jpg" alt="" class="hide-stagger no-mobile">
+    <img src="images/gold4.jpg" alt="" class="hide-stagger no-mobile">
+  </div>
+</div>
+
+<div class="music-player" id="music">
+  <iframe width="100%" height="120" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fgoldlinebar%2Fjun-live-at-gold-line%2F" frameborder="0" ></iframe>
+  <iframe width="100%" height="120" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fgoldlinebar%2Fssakanoi-aiff_foo-live-at-gold-line%2F" frameborder="0" ></iframe>
+  <iframe width="100%" height="120" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fgoldlinebar%2Fdj-goldie-live-at-gold-line%2F" frameborder="0" ></iframe>
+  <iframe width="100%" height="120" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fgoldlinebar%2Frahil-jamalifard-live-at-gold-line%2F" frameborder="0" ></iframe>
+  <iframe width="100%" height="120" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fgoldlinebar%2Feric-coleman-deq-live-at-gold-line-dilla-night%2F" frameborder="0" ></iframe>
+</div>
+
+<div class="contact" id="contact">
+  <div class="contact-left no-mobile">
+    <h1>Location</h1>
+    <p>5607 N Figueroa St.</p>
+    <p>Los Angeles, CA 90042</p>
+    <h1 id="contact">Contact</h1>
+    <p>323.274.4496</p>
+    <p>info@goldlinebar.com</p>
+  </div>
+  <div class="contact-middle no-mobile">
+    <h1>Hours</h1>
+    <p>Mon-Tuesday </p>
+    <p class="hours">5pm - 12am</p>
+    <p>Wed-Friday</p>
+    <p class="hours">5pm - 2am</p>
+    <p>Saturday</p>
+    <p class="hours">3pm - 2am</p>
+    <p>Sunday</p>
+    <p class="hours">3pm - 12am</p>
+  </div>
+ <div class="contact-details">
+  <div class="contact-left">
+    <h1>Location</h1>
+    <p>5607 N Figueroa St.</p>
+    <p>Los Angeles, CA 90042</p>
+    <h1 id="contact">Contact</h1>
+    <p>323.274.4496</p>
+    <p>info@goldlinebar.com</p>
+  </div>
+  <div class="contact-middle">
+    <h1>Hours</h1>
+    <p>Mon-Tuesday </p>
+    <p class="hours">5pm - 12am</p>
+    <p>Wed-Friday</p>
+    <p class="hours">5pm - 2am</p>
+    <p>Saturday</p>
+    <p class="hours">3pm - 2am</p>
+    <p>Sunday</p>
+    <p class="hours">3pm - 12am</p>
+  </div>
+ </div>
+  <div class="contact-right">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.4553420916573!2d-118.19600283143286!3d34.10909084266143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c410776f1bd7%3A0x576abf9187c7019f!2s5607%20N%20Figueroa%20St%2C%20Los%20Angeles%2C%20CA%2090042!5e0!3m2!1sen!2sus!4v1704434992473!5m2!1sen!2sus" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div>
+
+<footer>
+  <p>Gold Line Bar</p>
+  <img src="images/logo.webp" alt="">
+  <div class="address">
+    <p>5607 N Figueroa St.</p>
+    <p>Los Angeles, CA 90042</p>
+  </div>
+</footer>
+
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
